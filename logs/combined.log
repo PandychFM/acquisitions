@@ -1,0 +1,13 @@
+{"level":"info","message":"Hello for Acquistions!","service":"acquisition-api","timestamp":"2025-12-03T19:45:09.335Z"}
+{"level":"info","message":"Hello for Acquistions!","service":"acquisition-api","timestamp":"2025-12-03T19:46:19.310Z"}
+{"level":"info","message":"Hello for Acquistions!","service":"acquisition-api","timestamp":"2025-12-03T19:47:37.534Z"}
+{"level":"info","message":"::1 - - [03/Dec/2025:19:47:37 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-03T19:47:37.549Z"}
+{"level":"info","message":"::1 - - [03/Dec/2025:19:47:37 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-03T19:47:37.578Z"}
+{"level":"info","message":"Hello for Acquistions!","service":"acquisition-api","timestamp":"2025-12-03T19:58:58.247Z"}
+{"level":"info","message":"::1 - - [03/Dec/2025:19:58:58 +0000] \"GET / HTTP/1.1\" 200 23 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-03T19:58:58.264Z"}
+{"level":"info","message":"::1 - - [03/Dec/2025:19:59:49 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-03T19:59:49.379Z"}
+{"level":"info","message":"::1 - - [03/Dec/2025:20:00:13 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-03T20:00:13.288Z"}
+{"level":"info","message":"::1 - - [03/Dec/2025:20:00:35 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-03T20:00:35.186Z"}
+{"level":"info","message":"Hello for Acquistions!","service":"acquisition-api","timestamp":"2025-12-04T13:56:49.368Z"}
+{"level":"info","message":"::1 - - [04/Dec/2025:13:56:49 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 YaBrowser/25.10.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-04T13:56:49.396Z"}
+{"level":"info","message":"::1 - - [04/Dec/2025:13:56:49 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 YaBrowser/25.10.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-04T13:56:49.615Z"}
