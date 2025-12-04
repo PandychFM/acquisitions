@@ -22,3 +22,5 @@ export const jwttoken = {
     }
   }
 };
+
+export default jwttoken;

@@ -18,3 +18,5 @@ export const cookies = {
     return req.cookies[name];
   }
 };
+
+export default cookies;
