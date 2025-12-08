@@ -66,6 +66,7 @@ export const authenticateUser = async ({ email, password }) => {
       throw new Error('Invalid email or password');
     }
 
+    // eslint-disable-next-line no-unused-vars
     const { password: _password, ...userWithoutPassword } = user;
 
     logger.info(`User ${user.email} authenticated successfully`);

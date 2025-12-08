@@ -90,3 +90,40 @@
 {"level":"info","message":"User valeria2006@gmail.com created successfully","service":"acquisition-api","timestamp":"2025-12-07T08:39:33.247Z"}
 {"level":"info","message":"User registered successfully: valeria2006@gmail.com","service":"acquisition-api","timestamp":"2025-12-07T08:39:33.249Z"}
 {"level":"info","message":"::ffff:172.19.0.1 - - [07/Dec/2025:08:39:33 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 103 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-07T08:39:33.250Z"}
+{"level":"info","message":"Getting users...","service":"acquisition-api","timestamp":"2025-12-07T09:36:26.296Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [07/Dec/2025:09:36:26 +0000] \"GET /api/users HTTP/1.1\" 200 667 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-07T09:36:26.654Z"}
+{"level":"info","message":"Hello for Acquistions!","service":"acquisition-api","timestamp":"2025-12-08T17:45:31.947Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:45:31 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-08T17:45:31.956Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:45:32 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-08T17:45:32.164Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:46:47 +0000] \"GET /api/getAllUsers HTTP/1.1\" 404 154 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-08T17:46:47.275Z"}
+{"level":"info","message":"Hello for Acquistions!","service":"acquisition-api","timestamp":"2025-12-08T17:46:54.188Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:46:54 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-08T17:46:54.190Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:47:08 +0000] \"GET /api/ HTTP/1.1\" 200 40 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-08T17:47:08.362Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:47:45 +0000] \"GET /api/users HTTP/1.1\" 401 61 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-08T17:47:45.713Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:47:55 +0000] \"GET /api/sign-in HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-08T17:47:55.939Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:48:00 +0000] \"GET /api/auth/sign-in HTTP/1.1\" 404 155 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-08T17:48:00.805Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:48:12 +0000] \"GET /api/users/2 HTTP/1.1\" 401 61 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisition-api","timestamp":"2025-12-08T17:48:12.516Z"}
+{"level":"info","message":"User valeria2006@gmail.com authenticated successfully","service":"acquisition-api","timestamp":"2025-12-08T17:49:46.156Z"}
+{"level":"info","message":"User logged in successfully: valeria2006@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:49:46.161Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:49:46 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 104 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-08T17:49:46.162Z"}
+{"level":"info","message":"User authenticated: valeria2006@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:51:06.924Z"}
+{"level":"info","message":"User authenticated: valeria2006@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:51:06.925Z"}
+{"level":"info","message":"Getting user by ID: 7","service":"acquisition-api","timestamp":"2025-12-08T17:51:06.926Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:51:07 +0000] \"GET /api/users/7 HTTP/1.1\" 200 197 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-08T17:51:07.277Z"}
+{"level":"info","message":"User authenticated: valeria2006@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:51:41.373Z"}
+{"level":"info","message":"User authenticated: valeria2006@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:51:41.375Z"}
+{"level":"warn","message":"Access denied for user valeria2006@gmail.com with role user. Required roles: admin","service":"acquisition-api","timestamp":"2025-12-08T17:51:41.375Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:51:41 +0000] \"DELETE /api/users/7 HTTP/1.1\" 403 58 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-08T17:51:41.376Z"}
+{"level":"info","message":"User authenticated: valeria2006@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:54:51.052Z"}
+{"level":"info","message":"User authenticated: valeria2006@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:54:51.056Z"}
+{"level":"warn","message":"Access denied for user valeria2006@gmail.com with role user. Required roles: admin","service":"acquisition-api","timestamp":"2025-12-08T17:54:51.056Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:54:51 +0000] \"GET /api/users/ HTTP/1.1\" 403 58 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-08T17:54:51.057Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:56:36 +0000] \"POST /api/api/sign-up HTTP/1.1\" 404 155 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-08T17:56:36.105Z"}
+{"level":"info","message":"User admin12345@gmail.com created successfully","service":"acquisition-api","timestamp":"2025-12-08T17:56:48.174Z"}
+{"level":"info","message":"User registered successfully: admin12345@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:56:48.176Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:56:48 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 113 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-08T17:56:48.177Z"}
+{"level":"info","message":"User authenticated: admin12345@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:58:25.896Z"}
+{"level":"info","message":"User authenticated: admin12345@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:58:25.897Z"}
+{"level":"info","message":"User admin12345@gmail.com attempting to delete user 5","service":"acquisition-api","timestamp":"2025-12-08T17:58:25.898Z"}
+{"level":"info","message":"User 5 deleted successfully by admin12345@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:58:26.705Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:58:26 +0000] \"DELETE /api/users/5 HTTP/1.1\" 200 39 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-08T17:58:26.707Z"}
