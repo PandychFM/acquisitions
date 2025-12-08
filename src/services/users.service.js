@@ -6,31 +6,35 @@ import bcrypt from 'bcrypt';
 
 export const getAllUsers = async () => {
   try {
-    return await db.select({
-      id: users.id,
-      email: users.email,
-      name: users.name,
-      role: users.role,
-      created_at: users.created_at,
-      updated_at: users.updated_at,
-    }).from(users);
-
+    return await db
+      .select({
+        id: users.id,
+        email: users.email,
+        name: users.name,
+        role: users.role,
+        created_at: users.created_at,
+        updated_at: users.updated_at,
+      })
+      .from(users);
   } catch (e) {
     logger.error('Error fetching all users:', e);
     throw e;
   }
 };
 
-export const getUserById = async (id) => {
+export const getUserById = async id => {
   try {
-    const result = await db.select({
-      id: users.id,
-      email: users.email,
-      name: users.name,
-      role: users.role,
-      created_at: users.created_at,
-      updated_at: users.updated_at,
-    }).from(users).where(eq(users.id, id));
+    const result = await db
+      .select({
+        id: users.id,
+        email: users.email,
+        name: users.name,
+        role: users.role,
+        created_at: users.created_at,
+        updated_at: users.updated_at,
+      })
+      .from(users)
+      .where(eq(users.id, id));
 
     if (result.length === 0) {
       throw new Error('User not found');
@@ -46,15 +50,18 @@ export const getUserById = async (id) => {
 export const updateUser = async (id, updates) => {
   try {
     // First check if user exists
-    const existingUser = await db.select({ id: users.id }).from(users).where(eq(users.id, id));
-    
+    const existingUser = await db
+      .select({ id: users.id })
+      .from(users)
+      .where(eq(users.id, id));
+
     if (existingUser.length === 0) {
       throw new Error('User not found');
     }
 
     // Prepare update data
     const updateData = { ...updates };
-    
+
     // Hash password if it's being updated
     if (updateData.password) {
       const saltRounds = 12;
@@ -65,7 +72,8 @@ export const updateUser = async (id, updates) => {
     updateData.updated_at = new Date();
 
     // Perform update
-    const result = await db.update(users)
+    const result = await db
+      .update(users)
       .set(updateData)
       .where(eq(users.id, id))
       .returning({
@@ -84,18 +92,21 @@ export const updateUser = async (id, updates) => {
   }
 };
 
-export const deleteUser = async (id) => {
+export const deleteUser = async id => {
   try {
     // First check if user exists
-    const existingUser = await db.select({ id: users.id }).from(users).where(eq(users.id, id));
-    
+    const existingUser = await db
+      .select({ id: users.id })
+      .from(users)
+      .where(eq(users.id, id));
+
     if (existingUser.length === 0) {
       throw new Error('User not found');
     }
 
     // Delete the user
     await db.delete(users).where(eq(users.id, id));
-    
+
     return { success: true, message: 'User deleted successfully' };
   } catch (e) {
     logger.error(`Error deleting user ${id}:`, e);

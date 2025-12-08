@@ -11,12 +11,15 @@ describe('API Endpoints', () => {
       expect(response.body).toHaveProperty('uptime');
     });
   });
-  
+
   describe('GET /api', () => {
     it('should return API message', async () => {
       const response = await request(app).get('/api').expect(200);
 
-      expect(response.body).toHaveProperty('message', 'Acquistions API is running');
+      expect(response.body).toHaveProperty(
+        'message',
+        'Acquistions API is running'
+      );
     });
   });
 

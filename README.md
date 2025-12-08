@@ -32,11 +32,12 @@ Copy the templates and fill in your credentials:
 # Copy and edit development config
 cp .env.development.example .env.development
 
-# Copy and edit production config  
+# Copy and edit production config
 cp .env.production.example .env.production
 ```
 
 **`.env.development`** (for Neon Local):
+
 ```env
 NODE_ENV=development
 NEON_API_KEY=neon_api_1abc2def3ghi4jkl5mno6pqr7stu8vwx
@@ -46,6 +47,7 @@ DATABASE_NAME=myapp
 ```
 
 **`.env.production`** (for Neon Cloud):
+
 ```env
 NODE_ENV=production
 DATABASE_URL=postgres://username:password@ep-cool-darkness-123456.us-east-1.aws.neon.tech/myapp?sslmode=require
@@ -65,6 +67,7 @@ docker compose --env-file .env.development -f docker-compose.dev.yml up -d --bui
 ```
 
 ### What happens:
+
 1. Neon Local container starts and creates an ephemeral branch
 2. Your app connects to `postgres://neon:npg@neon-local:5432/myapp`
 3. When you stop the containers, the ephemeral branch is automatically deleted
@@ -105,6 +108,7 @@ docker compose --env-file .env.production -f docker-compose.prod.yml up -d --bui
 ### Option 2: Container Platform (Railway, Render, etc.)
 
 1. Build and push your Docker image:
+
 ```bash
 docker build -t your-app .
 docker tag your-app your-registry/your-app:latest
@@ -112,6 +116,7 @@ docker push your-registry/your-app:latest
 ```
 
 2. Set environment variables on your platform:
+
 ```
 NODE_ENV=production
 DATABASE_URL=postgres://username:password@ep-cool-darkness-123456.us-east-1.aws.neon.tech/myapp?sslmode=require
@@ -124,7 +129,7 @@ DATABASE_URL=postgres://username:password@ep-cool-darkness-123456.us-east-1.aws.
 docker compose --env-file .env.development -f docker-compose.dev.yml up --build
 docker compose --env-file .env.development -f docker-compose.dev.yml down
 
-# Production  
+# Production
 docker compose --env-file .env.production -f docker-compose.prod.yml up -d --build
 docker compose --env-file .env.production -f docker-compose.prod.yml down
 
@@ -142,6 +147,7 @@ docker exec -it neon-local-proxy sh
 ### Neon Local Issues
 
 1. **Connection refused**: Ensure Neon Local container is healthy
+
    ```bash
    docker compose ps
    docker compose logs neon-local
@@ -164,7 +170,7 @@ docker exec -it neon-local-proxy sh
 ├── docker-compose.dev.yml     # Development with Neon Local
 ├── docker-compose.prod.yml    # Production with Neon Cloud
 ├── .env.development          # Dev environment variables
-├── .env.production           # Prod environment variables  
+├── .env.production           # Prod environment variables
 ├── .gitignore                # Excludes .env.* and .neon_local/
 └── README.md                 # This file
 ```

@@ -12,7 +12,7 @@ export const signup = async (req, res, next) => {
     if (!validationResult.success) {
       return res.status(400).json({
         error: 'Validation error',
-        details: formatValidationError(validationResult.error)
+        details: formatValidationError(validationResult.error),
       });
     }
 
@@ -20,28 +20,35 @@ export const signup = async (req, res, next) => {
 
     const user = await createUser({ name, email, password, role });
 
-    const token = jwttoken.sign({ id: user.id, email: user.email, role: user.role });
+    const token = jwttoken.sign({
+      id: user.id,
+      email: user.email,
+      role: user.role,
+    });
 
     cookies.set(res, 'token', token);
 
     logger.info(`User registered successfully: ${email}`);
 
-    res.status(201).json({ 
+    res.status(201).json({
       message: 'User register',
-      user: { 
-        id: user.id, name: user.name, email: user.email, role: user.role
-      } 
+      user: {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+      },
     });
   } catch (e) {
     logger.error('Signup error:', e);
 
-    if(e.message === 'User with this already exists') {
+    if (e.message === 'User with this already exists') {
       return res.status(409).json({ message: e.message });
     }
 
     next(e);
   }
-}; 
+};
 
 export const signin = async (req, res, next) => {
   try {
@@ -50,7 +57,7 @@ export const signin = async (req, res, next) => {
     if (!validationResult.success) {
       return res.status(400).json({
         error: 'Validation error',
-        details: formatValidationError(validationResult.error)
+        details: formatValidationError(validationResult.error),
       });
     }
 
@@ -58,7 +65,11 @@ export const signin = async (req, res, next) => {
 
     const user = await authenticateUser({ email, password });
 
-    const token = jwttoken.sign({ id: user.id, email: user.email, role: user.role });
+    const token = jwttoken.sign({
+      id: user.id,
+      email: user.email,
+      role: user.role,
+    });
 
     cookies.set(res, 'token', token);
 
@@ -70,8 +81,8 @@ export const signin = async (req, res, next) => {
         id: user.id,
         name: user.name,
         email: user.email,
-        role: user.role
-      }
+        role: user.role,
+      },
     });
   } catch (e) {
     logger.error('Signin error:', e);
