@@ -18,5 +18,5 @@ router.put('/:id', authenticateToken, updateUserById);
 
 // Delete user by ID (requires authentication, users can delete themselves, admins can delete anyone)
 router.delete('/:id', authenticateToken, requireRole(['admin']), deleteUserById);
-
+  
 export default router;

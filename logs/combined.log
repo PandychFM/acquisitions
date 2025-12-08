@@ -127,3 +127,9 @@
 {"level":"info","message":"User admin12345@gmail.com attempting to delete user 5","service":"acquisition-api","timestamp":"2025-12-08T17:58:25.898Z"}
 {"level":"info","message":"User 5 deleted successfully by admin12345@gmail.com","service":"acquisition-api","timestamp":"2025-12-08T17:58:26.705Z"}
 {"level":"info","message":"::ffff:172.19.0.1 - - [08/Dec/2025:17:58:26 +0000] \"DELETE /api/users/5 HTTP/1.1\" 200 39 \"-\" \"HTTPie\"","service":"acquisition-api","timestamp":"2025-12-08T17:58:26.707Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Dec/2025:20:11:41 +0000] \"GET /health HTTP/1.1\" 200 73 \"-\" \"-\"","service":"acquisition-api","timestamp":"2025-12-08T20:11:41.160Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Dec/2025:20:11:41 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"-\"","service":"acquisition-api","timestamp":"2025-12-08T20:11:41.192Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Dec/2025:20:11:41 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisition-api","timestamp":"2025-12-08T20:11:41.212Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Dec/2025:20:18:30 +0000] \"GET /health HTTP/1.1\" 200 73 \"-\" \"-\"","service":"acquisition-api","timestamp":"2025-12-08T20:18:30.044Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Dec/2025:20:18:30 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"-\"","service":"acquisition-api","timestamp":"2025-12-08T20:18:30.080Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [08/Dec/2025:20:18:30 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisition-api","timestamp":"2025-12-08T20:18:30.105Z"}
