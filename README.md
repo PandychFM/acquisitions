@@ -181,6 +181,7 @@ docker exec -it neon-local-proxy sh
 - Use secrets management in production (Docker secrets, Kubernetes secrets, etc.)
 - Rotate your Neon API keys regularly
 - The `.neon_local/` directory contains branch metadata - keep it out of git
+- Test CI/CD Pipelines
 
 ## Learn More
 
